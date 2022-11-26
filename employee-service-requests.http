@@ -1,0 +1,28 @@
+### Получить всех сотрудников
+GET http://localhost:8080/employees
+
+
+### Создать сотрудника
+POST http://localhost:8080/employees
+Content-Type: application/json
+
+{
+  "firstName": " Ivan",
+  "lastName": "Ivanov",
+  "department": 1,
+  "salary": 1000
+}
+
+### Создать второго сотрудника
+POST http://localhost:8080/employees
+Content-Type: application/json
+
+{
+  "firstName": "Cemen",
+  "lastName": "Cemenov",
+  "departmennt": 2,
+  "salary": 5000
+}
+
+### Получить сумму зарплат
+GET http://localhost:8080/employees/salary/sum
