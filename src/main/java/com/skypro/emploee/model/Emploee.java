@@ -1,14 +1,14 @@
 package com.skypro.emploee.model;
 
 public class Emploee {
-    private static int counter;
-    private final int id;
-    private final String firstName;
-    private final String lastName;
-    private final int department;
-    private final int salary;
+    private static int  counter;
+    private final int  id;
+    private final String  firstName;
+    private final String  lastName;
+    private final int  department;
+    private final int  salary;
 
-    public Emploee(String firstName, String lastName, int department, int salary) {
+    public Emploee( String firstName, String lastName, int department, int salary ) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.department = department;
@@ -16,31 +16,31 @@ public class Emploee {
         this.id=counter++;
     }
 
-    public int getId() {
+    public int getId( ) {
         return id;
     }
 
-    public String getFirstName() {
+    public String getFirstName( ) {
         return firstName;
     }
 
-    public String getLastName() {
+    public String getLastName( ) {
         return lastName;
     }
 
-    public int getDepartment() {
+    public int getDepartment( ) {
         return department;
     }
 
-    public int getSalary() {
+    public int getSalary( ) {
         return salary;
     }
 
     @Override
-    public String toString() {
+    public String toString( ) {
         return "Emploee{" +
                 "id=" + id +
-                ", firstName='" + firstName + '\'' +
+                ",  firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", department=" + department +
                 ", salary=" + salary +

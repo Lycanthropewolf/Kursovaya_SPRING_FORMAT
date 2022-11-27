@@ -6,27 +6,27 @@ public class EmployeeRequest {
     private int department;
     private int salary;
 
-    public String getFirstName() {
+    public String getFirstName () {
         return firstName;
     }
 
-    public void setFirstName(String firstName) {
+    public void setFirstName( String firstName ) {
         this.firstName = firstName;
     }
 
-    public String getLastName() {
+    public String getLastName () {
         return lastName;
     }
 
-    public void setLastName(String lastName) {
+    public void setLastName( String lastName ) {
         this.lastName = lastName;
     }
 
-    public int getDepartment() {
+    public int getDepartment () {
         return department;
     }
 
-    public void setDepartment(int department) {
+    public void setDepartment( int department ) {
         this.department = department;
     }
 
@@ -34,7 +34,7 @@ public class EmployeeRequest {
         return salary;
     }
 
-    public void setSalary(int salary) {
+    public void setSalary( int salary ) {
         this.salary = salary;
     }
 }
