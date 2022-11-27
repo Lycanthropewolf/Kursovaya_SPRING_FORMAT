@@ -24,5 +24,15 @@ Content-Type: application/json
   "salary": 5000
 }
 
+
 ### Получить сумму зарплат
 GET http://localhost:8080/employees/salary/sum
+
+### Получить сотрудника с самой большой зарплатой
+GET http://localhost:8080/employees/salary/max
+
+### Получить сотрудника с самой маленькой зарплатой
+GET http://localhost:8080/employees/salary/min
+
+### Получение всех сотрудников, зарплата которых больше средней зарплаты
+GET http://localhost:8080/employees/highSalary
