@@ -1,5 +1,7 @@
 package com.skypro.emploee;
 
+import com.skypro.emploee.model.Emploee;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -7,7 +9,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class EmploeeBookSpringApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(EmploeeBookSpringApplication.class, args);
+        if (StringUtils.isEmpty("firstName")||StringUtils.isBlank("firstName")){
+            System.out.println("Заполните правильно имя сотрудника");
+        }
+        if (StringUtils.isEmpty("lastName")||StringUtils.isBlank("lastName")){
+            System.out.println("Заполните правильно фамилию сотрудника");
+        }
     }
 
 }

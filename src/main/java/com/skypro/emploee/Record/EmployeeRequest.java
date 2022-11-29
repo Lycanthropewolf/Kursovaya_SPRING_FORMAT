@@ -6,6 +6,7 @@ public class EmployeeRequest {
     private int department;
     private int salary;
 
+
     public String getFirstName () {
         return firstName;
     }

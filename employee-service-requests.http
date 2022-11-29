@@ -7,7 +7,7 @@ POST http://localhost:8080/employees
 Content-Type: application/json
 
 {
-  "firstName": " Ivan",
+  "firstName": "   ",
   "lastName": "Ivanov",
   "department": 1,
   "salary": 1000
@@ -36,3 +36,11 @@ GET http://localhost:8080/employees/salary/min
 
 ### Получение всех сотрудников, зарплата которых больше средней зарплаты
 GET http://localhost:8080/employees/highSalary
+
+
+ if (StringUtils.isEmpty("firstName")||StringUtils.isBlank("firstName")){
+            System.out.println("Заполните правильно имя сотрудника");
+        }
+        if (StringUtils.isEmpty("lastName")||StringUtils.isBlank("lastName")){
+            System.out.println("Заполните правильно фамилию сотрудника");
+        }
