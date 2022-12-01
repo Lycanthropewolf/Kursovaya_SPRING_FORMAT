@@ -7,14 +7,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class EmploeeBookSpringApplication {
-
     public static void main(String[] args) {
-        if (StringUtils.isEmpty("firstName")||StringUtils.isBlank("firstName")){
-            System.out.println("Заполните правильно имя сотрудника");
-        }
-        if (StringUtils.isEmpty("lastName")||StringUtils.isBlank("lastName")){
-            System.out.println("Заполните правильно фамилию сотрудника");
-        }
+        SpringApplication.run(EmploeeBookSpringApplication.class, args);
     }
 
 }
+
+
+

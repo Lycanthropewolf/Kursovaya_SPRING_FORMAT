@@ -8,7 +8,7 @@ public class EmployeeRequest {
 
 
     public String getFirstName () {
-        return firstName;
+        return this.firstName=firstName;
     }
 
     public void setFirstName( String firstName ) {
@@ -16,7 +16,7 @@ public class EmployeeRequest {
     }
 
     public String getLastName () {
-        return lastName;
+        return this.lastName=lastName;
     }
 
     public void setLastName( String lastName ) {
