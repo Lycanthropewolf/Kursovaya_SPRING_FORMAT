@@ -19,9 +19,9 @@ public class EmploeeService {
 
     public Emploee addEmployee( EmployeeRequest employeeRequest ) {
         if (StringUtils.isEmpty(employeeRequest.getFirstName()) || StringUtils.isBlank(employeeRequest.getFirstName())) {
-            System.out.println("Заполните правильно имя сотрудника");
+            throw new RuntimeException("Введите правильно имя сотрудника");
         } else if (StringUtils.isEmpty(employeeRequest.getLastName()) || StringUtils.isBlank(employeeRequest.getLastName())) {
-            System.out.println("Заполните правильно фамилию сотрудника");
+            throw new RuntimeException("Введите правильно фамилию сотрудника");
         }
         Emploee emploee = new  Emploee(
                 StringUtils.capitalize(employeeRequest.getFirstName()),
