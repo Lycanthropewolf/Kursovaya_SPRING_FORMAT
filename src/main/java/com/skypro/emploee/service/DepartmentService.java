@@ -19,7 +19,7 @@ public class DepartmentService {
 
 
 
-    public Collection<Emploee> getEmployeeesFromDepartment(int departmentId) {
+    public Collection<Emploee> getEmployeeesFromDepartment( int  departmentId) {
         return emploeeService.getEmployeesByDepartmentStream(departmentId)
     }
 
