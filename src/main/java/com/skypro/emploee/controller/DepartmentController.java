@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
+import java.util.OptionalInt;
 
 @RestController
 @RequestMapping("/department")
@@ -47,7 +48,7 @@ public class DepartmentController {
         return departmentService.getMinSalaryOfDepartment(departmentId);
     }
     @GetMapping("/{id}/salary/max")
-    public int  getMaxSalaryOfDepartment(@PathVariable("id")int departmentId){
+    public int getMaxSalaryOfDepartment(@PathVariable("id")int departmentId){
         return departmentService.getMaxSalaryOfDepartment(departmentId);
     }
 
