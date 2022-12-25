@@ -14,36 +14,39 @@ import java.util.Optional;
 
 @RestController
 public class EmploeeController {
-    private final  EmploeeService emploeeService;
+    private final EmploeeService emploeeService;
 
-    public EmploeeController( EmploeeService emploeeService ) {
-        this.emploeeService =  emploeeService;
+    public EmploeeController(EmploeeService emploeeService) {
+        this.emploeeService = emploeeService;
     }
 
     @GetMapping("/employees")
-    public Collection<Emploee> getAllEmployees( ) {
-        return this.emploeeService.getAllEmploees( );
+    public Collection<Emploee> getAllEmployees() {
+        return this.emploeeService.getAllEmploees();
     }
 
     @PostMapping("/employees")
-    public Emploee createEmployeee(@RequestBody  EmployeeRequest employeeRequest ) {
+    public Emploee createEmployeee(@RequestBody EmployeeRequest employeeRequest) {
         return this.emploeeService.addEmployee(employeeRequest);
     }
 
     @GetMapping("employees/salary/sum")
     public int getSalarySum() {
-        return this.emploeeService.getSalarySum( );
+        return this.emploeeService.getSalarySum();
     }
+
     @GetMapping("employees/salary/max")
-    public Optional<Emploee> getSalaryMax( ){
-        return this.emploeeService.getEmloyeeSalaryMax( );
+    public Optional<Emploee> getSalaryMax() {
+        return this.emploeeService.getEmloyeeSalaryMax();
     }
+
     @GetMapping("employees/salary/min")
-    public Optional<Emploee>getSalaryMin( ){
-        return this.emploeeService.getEmloyeeSalaryMin ();
+    public Optional<Emploee> getSalaryMin() {
+        return this.emploeeService.getEmloyeeSalaryMin();
     }
+
     @GetMapping("employees/highSalary")
-    public List<Emploee> getSalaryHigh( ){
-        return this.emploeeService.getEmloyeeSalaryHigh( );
+    public List<Emploee> getSalaryHigh() {
+        return this.emploeeService.getEmloyeeSalaryHigh();
     }
 }
