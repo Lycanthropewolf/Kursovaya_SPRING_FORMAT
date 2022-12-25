@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -17,10 +18,14 @@ public class DepartmentService {
         this.emploeeService = emploeeService;
     }
 
+    public Set<Integer>getExistingDepartments(){
+        return emploeeService.getAllEmploees().stream().map(Emploee::getDepartment).collect(Collectors.toSet());
+    }
 
 
-    public Collection<Emploee> getEmployeeesFromDepartment( int  departmentId) {
-        return emploeeService.getEmployeesByDepartmentStream(departmentId)
+
+    public List<Emploee> getEmployeeesFromDepartment( int  departmentId) {
+        return emploeeService.getAllEmploees().stream().filter(emploee -> emploee.getDepartment()==departmentId).collect(Collectors.toSet());
     }
 
 
