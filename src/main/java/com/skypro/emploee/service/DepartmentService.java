@@ -20,11 +20,13 @@ public class DepartmentService {
 
 
     public List<Emploee> getEmployeeesFromDepartment(int departmentId) {
-        return emploeeService.getAllEmploees().stream().filter(emploee -> emploee.getDepartment() == departmentId).collect(Collectors.toList());
+        return emploeeService.getAllEmploees().stream().
+                filter(emploee -> emploee.getDepartment() == departmentId).collect(Collectors.toList());
     }
 
     public Map<Integer, List<Emploee>> getEmployeeesByDepartment() {
-        return getExistingDepartments().stream().collect(Collectors.toMap(dept -> dept, this::getEmployeeesFromDepartment));
+        return getExistingDepartments().stream().
+                collect(Collectors.toMap(dept -> dept, this::getEmployeeesFromDepartment));
     }
 
     public int getSalarySumOfDepartment(int departmentId) {

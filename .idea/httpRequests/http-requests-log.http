@@ -1,3 +1,324 @@
+GET http://localhost:8080/department/?1/salary/sum=
+
+<> 2022-12-26T165857.200.txt
+
+###
+
+GET http://localhost:8080/department/?1/employees=
+
+<> 2022-12-26T165821.200.txt
+
+###
+
+GET http://localhost:8080/department/employees
+
+<> 2022-12-26T165759.200.json
+
+###
+
+GET http://localhost:8080/employees
+
+<> 2022-12-26T165741.200.json
+
+###
+
+GET http://localhost:8080/employees
+
+<> 2022-12-26T165737.200.json
+
+###
+
+POST http://localhost:8080/employees
+Content-Type: application/json
+
+{"firstName": "Ivan",
+"lastName": "Ivanov",
+ "department": "1",
+  "salary": "3000"
+}
+
+<> 2022-12-26T165730.200.json
+
+###
+
+POST http://localhost:8080/employees
+Content-Type: application/json
+
+{"firstName": "Ivan",
+"lastName": "Ivanov",
+ "department": "1",
+  "salary": "3000"
+}
+
+<> 2022-12-26T165729.200.json
+
+###
+
+POST http://localhost:8080/employees
+Content-Type: application/json
+
+{"firstName": "Ivan",
+"lastName": "Ivanov",
+ "department": "1",
+  "salary": "3000"
+}
+
+<> 2022-12-26T165719.200.json
+
+###
+
+GET http://localhost:8080/department/employees
+
+<> 2022-12-26T165124.200.json
+
+###
+
+GET http://localhost:8080/store/order/add
+
+<> 2022-12-26T164918.404.json
+
+###
+
+GET http://localhost:8080/store/order/add
+
+<> 2022-12-26T164916.404.json
+
+###
+
+GET http://localhost:8080/department/?0,1/employees=
+
+<> 2022-12-26T164857.200.txt
+
+###
+
+GET http://localhost:8080/department/?1/employees=
+
+<> 2022-12-26T164842.200.txt
+
+###
+
+GET http://localhost:8080/department/employees?0=
+
+<> 2022-12-26T164715.200.json
+
+###
+
+GET http://localhost:8080/department/?0/employees=
+
+<> 2022-12-26T164702.200.txt
+
+###
+
+POST http://localhost:8080/employees
+
+<> 2022-12-26T164612.400.json
+
+###
+
+GET http://localhost:8080/department/employees
+
+<> 2022-12-26T164524.200.json
+
+###
+
+GET http://localhost:8080/department/?2/employees=
+
+<> 2022-12-26T164407.200.txt
+
+###
+
+GET http://localhost:8080/department/?1/employees=
+
+<> 2022-12-26T164352.200.txt
+
+###
+
+GET http://localhost:8080/department
+
+<> 2022-12-26T164253.200.txt
+
+###
+
+GET http://localhost:8080/employees
+
+<> 2022-12-26T164231.200.json
+
+###
+
+POST http://localhost:8080/employees
+Content-Type: application/json
+
+{
+  "firstName": "cemen",
+  "lastName": "Cemenov",
+  "departmennt": 2,
+  "salary": 5000
+}
+
+<> 2022-12-26T164222.200.json
+
+###
+
+POST http://localhost:8080/employees
+Content-Type: application/json
+
+{
+  "firstName": "Ivan",
+  "lastName": "Ivanov",
+  "department": 1,
+  "salary": 1000
+}
+
+<> 2022-12-26T164221.200.json
+
+###
+
+POST http://localhost:8080/employees
+Content-Type: application/json
+
+{
+  "firstName": "Ivan",
+  "lastName": "Ivanov",
+  "department": 1,
+  "salary": 1000
+}
+
+<> 2022-12-26T164220.200.json
+
+###
+
+POST http://localhost:8080/employees
+Content-Type: application/json
+
+{
+  "firstName": "",
+  "lastName": "Ivanov",
+  "department": 1,
+  "salary": 1000
+}
+
+<> 2022-12-26T164206.500.json
+
+###
+
+POST http://localhost:8080/employees
+Content-Type: application/json
+
+{
+  "firstName": "cemen",
+  "lastName": "Cemenov",
+  "departmennt": 2,
+  "salary": 5000
+}
+
+<> 2022-12-26T164147.200.json
+
+###
+
+GET http://localhost:8080/employees/highSalary
+
+<> 2022-12-26T164130.200.json
+
+###
+
+POST http://localhost:8080/employees
+Content-Type: application/json
+
+{
+  "firstName": "cemen",
+  "lastName": "Cemenov",
+  "departmennt": 2,
+  "salary": 5000
+}
+
+<> 2022-12-26T164123.200.json
+
+###
+
+POST http://localhost:8080/employees
+Content-Type: application/json
+
+{
+  "firstName": "cemen",
+  "lastName": "Cemenov",
+  "departmennt": 2,
+  "salary": 5000
+}
+
+<> 2022-12-26T164122.200.json
+
+###
+
+POST http://localhost:8080/employees
+Content-Type: application/json
+
+{
+  "firstName": "",
+  "lastName": "Ivanov",
+  "department": 1,
+  "salary": 1000
+}
+
+<> 2022-12-26T164110.500.json
+
+###
+
+POST http://localhost:8080/employees
+Content-Type: application/json
+
+{
+  "firstName": "",
+  "lastName": "Ivanov",
+  "department": 1,
+  "salary": 1000
+}
+
+<> 2022-12-26T164106.500.json
+
+###
+
+POST http://localhost:8080/employees
+
+<> 2022-12-26T164030.400.json
+
+###
+
+POST http://localhost:8080/employees/add?1,"sergei"=
+
+<> 2022-12-26T153206.404.json
+
+###
+
+POST http://localhost:8080/employees/add
+
+<> 2022-12-26T153132.404.json
+
+###
+
+POST http://localhost:8080/employees
+
+<> 2022-12-26T152755.400.json
+
+###
+
+POST http://localhost:8080/employees
+
+<> 2022-12-26T152753.400.json
+
+###
+
+POST http://localhost:8080/employees
+
+<> 2022-12-26T152749.400.json
+
+###
+
+GET http://localhost:8080/department
+
+<> 2022-12-26T152725.200.txt
+
+###
+
 POST http://localhost:8080/employees
 Content-Type: application/json
 
@@ -115,395 +436,6 @@ Content-Type: application/json
 GET http://localhost:8080/employees
 
 <> 2022-12-01T171015.200.json
-
-###
-
-POST http://localhost:8080/employees
-Content-Type: application/json
-
-{
-  "firstName": "",
-  "lastName": "Ivanov",
-  "department": 1,
-  "salary": 1000
-}
-
-<> 2022-12-01T171012.200.json
-
-###
-
-GET http://localhost:8080/employees
-
-<> 2022-12-01T170959.200.json
-
-###
-
-POST http://localhost:8080/employees
-Content-Type: application/json
-
-{
-  "firstName": "   ",
-  "lastName": "Ivanov",
-  "department": 1,
-  "salary": 1000
-}
-
-<> 2022-12-01T170956.200.json
-
-###
-
-POST http://localhost:8080/employees
-Content-Type: application/json
-
-{
-  "firstName": "   ",
-  "lastName": "Ivanov",
-  "department": 1,
-  "salary": 1000
-}
-
-<> 2022-12-01T170912.200.json
-
-###
-
-GET http://localhost:8080/employees/salary/max
-
-<> 2022-12-01T170154.200.json
-
-###
-
-GET http://localhost:8080/employees/highSalary
-
-<> 2022-12-01T170148.200.json
-
-###
-
-GET http://localhost:8080/employees/salary/min
-
-<> 2022-12-01T170144.200.json
-
-###
-
-GET http://localhost:8080/employees/salary/sum
-
-<> 2022-12-01T170139.200.json
-
-###
-
-GET http://localhost:8080/employees
-
-<> 2022-12-01T170120.200.json
-
-###
-
-POST http://localhost:8080/employees
-Content-Type: application/json
-
-{
-  "firstName": "   ",
-  "lastName": "Ivanov",
-  "department": 1,
-  "salary": 1000
-}
-
-<> 2022-12-01T170114.200.json
-
-###
-
-POST http://localhost:8080/employees
-Content-Type: application/json
-
-{
-  "firstName": "Cemen",
-  "lastName": "Cemenov",
-  "departmennt": 2,
-  "salary": 5000
-}
-
-<> 2022-11-29T231305.200.json
-
-###
-
-POST http://localhost:8080/employees
-Content-Type: application/json
-
-{
-  "firstName": "   ",
-  "lastName": "Ivanov",
-  "department": 1,
-  "salary": 1000
-}
-
-<> 2022-11-29T231302.200.json
-
-###
-
-POST http://localhost:8080/employees
-Content-Type: application/json
-  "firstName": "Cemen",
-  "lastName": "Cemenov",
-  "departmennt": 2,
-  "salary": 5000
-}:
-
-<> 2022-11-29T231243.400.html
-
-###
-
-POST http://localhost:8080/employees
-Content-Type: application/json
-if (StringUtils.isEmpty("firstName")||StringUtils.isBlank("firstName")){:
-            System.out.println("Заполните правильно имя сотрудника");:
-        }:
-        if (StringUtils.isEmpty("lastName")||StringUtils.isBlank("lastName")){:
-            System.out.println("Заполните правильно фамилию сотрудника");:
-        }:
-{:
-  "firstName": "   ",
-  "lastName": "Ivanov",
-  "department": 1,
-  "salary": 1000
-}:
-
-<> 2022-11-29T231154.400.html
-
-###
-
-GET http://localhost:8080/employees/highSalary
-
- if (StringUtils.isEmpty("firstName")||StringUtils.isBlank("firstName")){
-            System.out.println("Заполните правильно имя сотрудника");
-        }
-        if (StringUtils.isEmpty("lastName")||StringUtils.isBlank("lastName")){
-            System.out.println("Заполните правильно фамилию сотрудника");
-        }
-
-<> 2022-11-29T230437.200.json
-
-###
-
-GET http://localhost:8080/employees/salary/min
-
-<> 2022-11-29T230426.200.json
-
-###
-
-GET http://localhost:8080/employees/salary/max
-
-<> 2022-11-29T230420.200.json
-
-###
-
-GET http://localhost:8080/employees/salary/sum
-
-<> 2022-11-29T230415.200.json
-
-###
-
-GET http://localhost:8080/employees
-
-<> 2022-11-29T230404.200.json
-
-###
-
-POST http://localhost:8080/employees
-Content-Type: application/json
-
-{
-  "firstName": "Cemen",
-  "lastName": "Cemenov",
-  "departmennt": 2,
-  "salary": 5000
-}
-
-<> 2022-11-29T230351.200.json
-
-###
-
-POST http://localhost:8080/employees
-Content-Type: application/json
-
-{
-  "firstName": "   ",
-  "lastName": "Ivanov",
-  "department": 1,
-  "salary": 1000
-}
-
-<> 2022-11-29T230348.200.json
-
-###
-
-GET http://localhost:8080/employees
-
-<> 2022-11-29T225125.200.json
-
-###
-
-POST http://localhost:8080/employees
-Content-Type: application/json
-
-{
-  "firstName": "   ",
-  "lastName": "Ivanov",
-  "department": 1,
-  "salary": 1000
-}
-
-<> 2022-11-29T225113.200.json
-
-###
-
-POST http://localhost:8080/employees
-Content-Type: application/json
-
-{
-  "firstName": "",
-  "lastName": "Ivanov",
-  "department": 1,
-  "salary": 1000
-}
-
-<> 2022-11-29T225105.200.json
-
-###
-
-GET http://localhost:8080/employees
-
-<> 2022-11-29T224936.200.json
-
-###
-
-POST http://localhost:8080/employees
-Content-Type: application/json
-
-{
-  "firstName": "",
-  "lastName": "Ivanov",
-  "department": 1,
-  "salary": 1000
-}
-
-<> 2022-11-29T224924.200.json
-
-###
-
-GET http://localhost:8080/employees
-
-<> 2022-11-29T224914.200.json
-
-###
-
-POST http://localhost:8080/employees
-Content-Type: application/json
-
-{
-  "firstName": "Cemen",
-  "lastName": "Cemenov",
-  "departmennt": 2,
-  "salary": 5000
-}
-
-<> 2022-11-29T224907.200.json
-
-###
-
-POST http://localhost:8080/employees
-Content-Type: application/json
-
-{
-  "firstName": "Ivan",
-  "lastName": "Ivanov",
-  "department": 1,
-  "salary": 1000
-}
-
-<> 2022-11-29T224903.200.json
-
-###
-
-GET http://localhost:8080/employees/highSalary
-
-<> 2022-11-27T175317.200.json
-
-###
-
-GET http://localhost:8080/employees/salary/min
-
-<> 2022-11-27T175309.200.json
-
-###
-
-GET http://localhost:8080/employees/salary/max
-
-<> 2022-11-27T175259.200.json
-
-###
-
-GET http://localhost:8080/employees/salary/sum
-
-<> 2022-11-27T175253.200.json
-
-###
-
-GET http://localhost:8080/employees
-
-<> 2022-11-27T175239.200.json
-
-###
-
-POST http://localhost:8080/employees
-Content-Type: application/json
-
-{
-  "firstName": "Cemen",
-  "lastName": "Cemenov",
-  "departmennt": 2,
-  "salary": 5000
-}
-
-<> 2022-11-27T175237.200.json
-
-###
-
-POST http://localhost:8080/employees
-Content-Type: application/json
-
-{
-  "firstName": "Cemen",
-  "lastName": "Cemenov",
-  "departmennt": 2,
-  "salary": 5000
-}
-
-<> 2022-11-27T175236.200.json
-
-###
-
-POST http://localhost:8080/employees
-Content-Type: application/json
-
-{
-  "firstName": " Ivan",
-  "lastName": "Ivanov",
-  "department": 1,
-  "salary": 1000
-}
-
-<> 2022-11-27T175235.200.json
-
-###
-
-POST http://localhost:8080/employees
-Content-Type: application/json
-{:
-"firstName": "Dima",
-  "lastName": "Dimov",
-  "departmennt": 3,
-  "salary": 3000
-}:
-
-<> 2022-11-27T175138.400.html
 
 ###
 
