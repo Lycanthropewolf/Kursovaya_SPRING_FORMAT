@@ -2,35 +2,56 @@ package com.skypro.emploee.service;
 
 import com.skypro.emploee.Record.EmployeeRequest;
 import com.skypro.emploee.model.Emploee;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
+import java.util.stream.Collectors;
 
 @Service
 public class EmploeeService {
     private final Map<Integer, Emploee> employees = new HashMap<>();
 
 
-    public Collection<Emploee> getAllEmploees() {
-        return this.employees.values();
+    public Collection<Emploee> getAllEmploees(  ) {
+         return this.employees.values();
     }
 
-    public Emploee addEmployee(EmployeeRequest employeeRequest) {
-        if (employeeRequest.getFirstName() == null || employeeRequest.getLastName() == null) {
-            throw new IllegalArgumentException("Введитте правильно имя и фамилию");
+    public Emploee addEmployee( EmployeeRequest employeeRequest ) {
+        if (StringUtils.isEmpty(employeeRequest.getFirstName()) || StringUtils.isBlank(employeeRequest.getFirstName())) {
+            throw new RuntimeException("Введите правильно имя сотрудника");
+        } else if (StringUtils.isEmpty(employeeRequest.getLastName()) || StringUtils.isBlank(employeeRequest.getLastName())) {
+            throw new RuntimeException("Введите правильно фамилию сотрудника");
         }
-        Emploee emploee = new Emploee(employeeRequest.getFirstName(),
-                employeeRequest.getLastName(),
+        Emploee emploee = new  Emploee(
+                StringUtils.capitalize(employeeRequest.getFirstName()),
+                StringUtils.capitalize(employeeRequest.getLastName()),
                 employeeRequest.getDepartment(),
                 employeeRequest.getSalary());
 
-        this.employees.put(emploee.getId(),emploee);
+        this.employees.put( emploee.getId(), emploee );
         return emploee;
     }
 
-    public int getSalarySum() {
-        return employees.values().stream().mapToInt(e->e.getSalary()).sum();
+    public int getSalarySum( ) {
+        return employees.values().stream().mapToInt(e ->  e.getSalary()).sum();
+    }
+
+
+    public Optional<Emploee> getEmloyeeSalaryMax( ) {
+        return employees.values().stream().max(Comparator.comparingInt(Emploee::getSalary));
+    }
+
+    public Optional<Emploee> getEmloyeeSalaryMin( ) {
+         return employees.values().stream().min(Comparator.comparingInt(Emploee::getSalary));
+    }
+
+    public List<Emploee> getEmloyeeSalaryHigh( ) {
+         double middle = employees.values().stream()
+                .mapToInt(Employee -> Employee.getSalary())
+                .average().orElse(0);
+         return employees.values().stream()
+                .filter(e->e.getSalary()>middle).collect(Collectors.toList());
     }
 }
+
